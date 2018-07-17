@@ -305,11 +305,15 @@
             style="@style/mapContainerTextView" />
     </GridLayout>
 
-    <ImageButton
+
+    <Button
         android:id="@+id/finish"
-        style="@style/addButton"
-        android:src="@drawable/a35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/finish"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/container_list"/>
+        app:layout_constraintTop_toBottomOf="@id/container_list" />
 
 </android.support.constraint.ConstraintLayout>

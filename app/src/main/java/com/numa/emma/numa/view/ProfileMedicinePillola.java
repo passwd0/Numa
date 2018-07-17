@@ -119,7 +119,7 @@ public class ProfileMedicinePillola extends Fragment{
                     int number = 0;
                     if (!numberS.isEmpty())
                         number = Integer.parseInt(numberS);
-                    if (number>0){
+                    if (number>=0){
                         medicine.setNum(number);
                         if (!toEdit)
                             controller.addMedicine(medicine);

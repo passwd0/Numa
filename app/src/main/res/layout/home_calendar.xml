@@ -9,7 +9,7 @@
     <com.applandeo.materialcalendarview.CalendarView
         android:id="@+id/calendarView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         app:headerColor="@color/white"
         app:headerLabelColor="@color/black"
         app:previousButtonSrc="@drawable/freccia_sx"
@@ -29,11 +29,13 @@
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:text="@string/home_calendar_green"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView1"
         app:layout_constraintTop_toBottomOf="@id/calendarView" />
 
@@ -50,13 +52,15 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/home_calendar_red"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@id/textView1"/>
+        app:layout_constraintTop_toBottomOf="@id/textView1" />
 
 </android.support.constraint.ConstraintLayout>

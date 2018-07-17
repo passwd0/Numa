@@ -133,12 +133,8 @@
 
         <RadioButton
             android:id="@+id/type1"
-            android:layout_width="@dimen/image_big"
             android:layout_height="@dimen/image_big"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            style="@style/tipology"
             android:background="@drawable/type1"
             android:button="@null"
             android:checked="true"
@@ -150,12 +146,8 @@
 
         <RadioButton
             android:id="@+id/type2"
-            android:layout_width="@dimen/image_big"
             android:layout_height="@dimen/image_big"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            style="@style/tipology"
             android:background="@drawable/type2"
             android:button="@null"
             android:scaleType="centerCrop"
@@ -166,12 +158,8 @@
 
         <RadioButton
             android:id="@+id/type3"
-            android:layout_width="@dimen/image_big"
             android:layout_height="@dimen/image_big"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            style="@style/tipology"
             android:background="@drawable/type3"
             android:button="@null"
             android:scaleType="centerCrop"
@@ -182,12 +170,8 @@
 
         <RadioButton
             android:id="@+id/type4"
-            android:layout_width="@dimen/image_big"
             android:layout_height="@dimen/image_big"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            style="@style/tipology"
             android:background="@drawable/type4"
             android:button="@null"
             android:scaleType="centerCrop"
@@ -200,10 +184,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        style="@style/tipology"
         android:text="@string/profile_addmedicine_type_1"
         android:textSize="@dimen/details_size"
         android:textStyle="italic"
@@ -213,10 +195,8 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        style="@style/tipology"
         android:text="@string/profile_addmedicine_type_2"
         android:textSize="@dimen/details_size"
         android:textStyle="italic"
@@ -226,10 +206,8 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        style="@style/tipology"
         android:text="@string/profile_addmedicine_type_3"
         android:textSize="@dimen/details_size"
         android:textStyle="italic"
@@ -239,10 +217,8 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        style="@style/tipology"
         android:text="@string/profile_addmedicine_type_4"
         android:textSize="@dimen/details_size"
         android:textStyle="italic"

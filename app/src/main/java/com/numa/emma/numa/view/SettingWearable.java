@@ -33,7 +33,7 @@ public class SettingWearable extends Fragment {
         final SeekBar soundBar = view.findViewById(R.id.sound_bar);
         final Switch vibration = view.findViewById(R.id.vibration_switch);
         final Spinner duration = view.findViewById(R.id.duration_spinner);
-        final ImageButton finish = view.findViewById(R.id.finish);
+        final Button finish = view.findViewById(R.id.finish);
 
         lightnessBar.setProgress(controller.getSettings().getLightnessWearable());
         soundBar.setProgress(controller.getSettings().getSoundWearable());

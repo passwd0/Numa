@@ -59,7 +59,7 @@ public class HomeProgramAddMedicine extends DialogFragment {
                         HomeProgramAdd.listAdapter.notifyDataSetChanged();
                     }
                 })
-                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                .setNegativeButton("Cancella", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         HomeProgramAddMedicine.this.getDialog().cancel();
                     }

@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.SeekBar;
@@ -39,7 +40,7 @@ public class SettingDispenser extends Fragment {
         final int[] containers_tv = {R.id.tv_medicine_name1, R.id.tv_medicine_name2, R.id.tv_medicine_name3, R.id.tv_medicine_name4, R.id.tv_medicine_name5, R.id.tv_medicine_name6, R.id.tv_medicine_name7, R.id.tv_medicine_name8};
         final ImageView[] containers_image = new ImageView[8];
         final TextView[] containers_name = new TextView[8];
-        final ImageButton finish = view.findViewById(R.id.finish);
+        final Button finish = view.findViewById(R.id.finish);
 
         lightnessBar.setProgress(s.getLightnessDispenser());
         soundBar.setProgress(s.getSoundDispenser());
