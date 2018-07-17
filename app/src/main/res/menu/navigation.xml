@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/calendar"
+        android:icon="@drawable/app3_51"
+        android:title="@string/home_calendar_title" />
+
+    <item
+        android:id="@+id/programma"
+        android:icon="@drawable/app3_63"
+        android:title="@string/home_program_title" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/app3_65"
+        android:title="@string/profile_title" />
+</menu>

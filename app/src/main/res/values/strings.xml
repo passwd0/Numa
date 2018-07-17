@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">Numa</string>
+    <string name="next">Avanti</string>
+    <string name="finish">Fine</string>
+    <string name="delete">Elimina</string>
+    INTRO
+    <string name="intro_1.1">Per gestire i tuoi medicinali in tranquillità.</string>
+    <string name="intro_1.2">Si consiglia Numa per tutti i familiari o caregiver che hanno un parente o una persona da seguire nella terapia farmacologica. Il sistema è adatto per persone che assumono un numero considerevole di pillole al giorno.</string>
+    <string name="intro_button">Inizia</string>
+    <string name="intro_profile">Imposta il profilo della persona che segue la terapia, inserendo i medicinali che assume.</string>
+    <string name="intro_prducts">Gestisci il dispenser impostando le erogazioni delle pillole e il wearable per ricordarsi tutti i medicinali.</string>
+    <string name="intro_control">Controlla se tutte le pillole sono state erogate correttamente, quindi se la persona che segui sta seguendo la terapia!</string>
+
+    PROFILO E AGGIUNGI MEDICINALE
+    <string name="profile_title">Profilo</string>
+    <string name="profile_name">Nome</string>
+    <string name="profile_name_details">Inserisci il nome e il cognome della persona che deve seguire la terapia.</string>
+    <string name="profile_medicines">Medicinali</string>
+    <string name="profile_medicines_details">Indica quali medicinali il paziente sta assumendo in questo momento. Puoi aggiungerne UNO SOLO alla volta.</string>
+    <string name="add">Aggiungi</string>
+    <string name="profile_caregiver">Caregiver</string>
+    <string name="profile_caregiver_details">Indica una o più persone che vuoi vengano informate sull\'andamento della terapia seguita dal paziente.</string>
+    <string name="profile_addmedicine_name">Nome medicinale</string>
+    <string name="profile_addmedicine_name_details">Marca o principio attivo</string>
+    <string name="profile_addmedicine_assumption">Metodo di assunzione</string>
+    <string name="profile_addmedicine_assumption_1">Orale</string>
+    <string name="profile_addmedicine_assumption_2">Inalazione</string>
+    <string name="profile_addmedicine_assumption_3">Iniezione</string>
+    <string name="profile_addmedicine_assumption_4">Gocce per occhi</string>
+    <string name="profile_addmedicine_assumption_5">Altro</string>
+    <string name="profile_addmedicine_type">Tipologia</string>
+    <string name="profile_addmedicine_type_1">Pillola</string>
+    <string name="profile_addmedicine_type_2">Polvere</string>
+    <string name="profile_addmedicine_type_3">Gocce</string>
+    <string name="profile_addmedicine_type_4">Sciroppo</string>
+    <string name="profile_addmedicine_type_5">Crema</string>
+    <string name="profile_addmedicine_type_details">Solo la tipologia \'pillola\' può essere erogata dal dispenser.</string>
+    <string name="profile_addmedicine_pill_title">Definisci la forma</string>
+    <string name="profile_addmedicine_pill_shape1">Compressa rotonda</string>
+    <string name="profile_addmedicine_pill_shape2">Capsula L:10-15mm</string>
+    <string name="profile_addmedicine_pill_shape3">Capsula L:16-25mm</string>
+    <string name="profile_addmedicine_pill_shape4">Compressa ovale</string>
+    <string name="profile_addmedicine_filter1"><u>Devi utilizzare il filtro di tipo A</u></string>
+    <string name="profile_addmedicine_filter2"><u>Devi utilizzare il filtro di tipo B</u></string>
+    <string name="profile_addmedicine_filter3"><u>Devi utilizzare il filtro di tipo C</u></string>
+    <string name="profile_addmedicine_filter4"><u>Devi utilizzare il filtro di tipo D</u></string>
+    <string name="profile_addmedicine_pill_container_title">Contenitore</string>
+    <string name="profile_addmedicine_pill_container_details">Seleziona il contenitore all\'interno del dispenser dentro cui inserirai questo medicinale.</string>
+    <string name="profile_addmedicine_pill_number_title">Numero</string>
+    <string name="profile_addmedicine_pill_number_details">Indica il numero di pillole che inserisci nel contenitore scelto. Puoi inserirne quante ne vuoi, ma senza superare il valore "max" indicato sul contenitore.</string>
+    <string name="profile_addmedicine_pill_alarm_title">Avvisami se stanno finendo le pillole nel dispenser</string>
+    <string name="profile_addmedicine_pill_alarm_details">Ti avviseremo quando rimandono 20 pillole.</string>
+    <string name="profile_addmedicine_delate">Elimina medicinale</string>
+    <string name="profile_birth">Data di nascita</string>
+    <string name="profile_birth_details">Inserisci la data di nascita della persona che deve seguire la terapia.</string>
+
+    AGGIUNGI CAREGIVER
+    <string name="profile_addcaregiver_title">Aggiungi caregiver</string>
+    <string name="profile_addcaregiver_name">Nome</string>
+    <string name="profle_addcaregiver_surname">Cognome</string>
+    <string name="profile_addcaregiver_relative">Parentela</string>
+    <string name="profile_addcaregiver_number">Numero di telefono</string>
+
+    IMPOSTAZIONI
+    <string name="settings_title">Impostazioni</string>
+    <string name="settings_numawearable_title">Numa Wearable</string>
+    <string name="settings_numawearable_management"><u>Gestisci le funzioni base del wearable</u></string>
+    <string name="settings_numadispenser_management"><u>Gestisci le funzioni base del dispenser</u></string>
+
+    NUMA WEARABLE
+    <string name="settings_status">Stato</string>
+    <string name="settings_on">Acceso</string>
+    <string name="settings_light">Luminosità</string>
+    <string name="settings_sound">Audio</string>
+    <string name="settings_numawearable_vibration">Vibrazione</string>
+    <string name="settings_duration_title">Durata</string>
+    <string name="settings_numawearable_duration_details">Indica dopo quanto tempo il wearable deve smettere di eseguire gli allarmi sonori.</string>
+    <string name="settings_durations_minutes">min</string>
+
+    NUMA DISPENSER
+    <string name="settings_numadispenser_title">Numa Dispenser</string>
+    <string name="settings_numadispenser_duration_details">Indica dopo quanto tempo il dispenser deve smettere di eseguire gli allarmi sonori.</string>
+    <string name="settings_numadispenser_notification_title">Notifica</string>
+    <string name="settings_numadispenser_notification_details">Indica dopo quanto tempo, nel caso di mancata assunzione, vorresti ricevere una notifica.</string>
+    <string name="settings_numadispenser_mapcontainer">Mappa contenitori</string>
+
+    HOME
+    <string name="home_title">Home</string>
+    <string name="home_part1_program_title">PROGRAMMA</string>
+    <string name="home_part2_calendar_title">CALENDARIO</string>
+    <string name="home_part1_program_details">Qui puoi gestire il piano terapeutico della persona che stai seguendo.</string>
+    <string name="home_part2_calendar_details">In questa sezione puoi controllare se il dispenser ha erogato tutte le pillole correttamente.</string>
+    <string name="home_part1_program_bar">VAI AL PROGRAMMA</string>
+    <string name="home_part2_calendar_bar">VAL AL CALENDARIO</string>
+
+    <string name="home_program_title">Programma</string>
+    <string name="home_program_addprogram_title">Aggiungi programmazione</string>
+    <string name="home_program_addprogram_details">Qui devi aggiungere tutti i medicinali che devono essere assunti ad uno stesso orario.</string>
+    <string name="home_program_addprogram_time">Orario</string>
+    <string name="home_program_addprogram_days_title">Programma</string>
+    <string name="home_program_addprogram_days_everyday">Ogni giorno</string>
+    <string name="home_program_addprogram_days_personalised">Personalizzato</string>
+    <string name="home_program_addprogram_medicines_title">Medicinali</string>
+	 <string name="home_program_addprogram_medicines_details">Indica tutti i medicinali che devono essere assunti all\'orario impostato. Se sono pillole, queste verranno erogate dal dispenser e puoi associare\nl\'allarme del wearable. Se sono altri tipi di medicinali, invece, puoi settare solo il wearable.</string>
+    <string name="home_program_addprogram_addmedicines_title">Aggiungi medicinali</string>
+    <string name="home_program_addprogram_addmedicines_details">Aggiungi tutti i medicinali da assumere all\'orari indicato con le relative quantità.</string>
+    <string name="home_program_addprogram_addmedicines_pill">Pillole</string>
+    <string name="home_program_addprogram_addmedicines_pill_details">Le pillole verranno erogate dal dispenser. Puoi scegliere al massimo 4 fasce orarie durante il giorno per erogare le pillole.</string>
+    <string name="home_program_addprogram_addmedicines_other">Altro</string>
+    <string name="home_program_addprogram_addmedicines_pill_units">Unità</string>
+    <string name="home_program_addprogram_addmedicines_other_goccia">Gocce</string>
+    <string name="home_program_addprogram_addmedicines_bustine">Bustine</string>
+    QUI NE MANCANO SICURAMENTE MA DEVO RIVEDERLA QUESTA PARTE!!
+    <string name="home_program_addprogram_alarm_numadispenser_title">Allarmi sul Numa Dispenser</string>
+    <string name="home_program_addprogram_alarm_numawearable_title">Allarmi sul Numa Wearable</string>
+    <string name="home_program_addprogram_alarm_numawearable_on">Attiva l\'allarme sul Numa Wearable</string>
+    <string name="home_program_addprogram_alarm_sound">Sonoro</string>
+    <string name="home_program_addprogram_alarm_sound_details">Scegli la suonaeria</string>
+    <string name="home_program_addprogram_alarm_lightness">Luminoso</string>
+
+    CALENDARIO
+    <string name="home_calendar_title">Calendario</string>
+    <string name="home_calendar_green">Tutte le pillole del giorno sono state erogate</string>
+    <string name="home_calendar_red">Alcune pillole non sono state erogate</string>
+    <string name="home_program_addprogram_alarm_light">Scegli il colore e il ritmo della luce</string>
+    <string name="material_calendar_monday">L</string>
+    <string name="material_calendar_tuesday">M</string>
+    <string name="material_calendar_wednesday">M</string>
+    <string name="material_calendar_thursday">G</string>
+    <string name="material_calendar_friday">V</string>
+    <string name="material_calendar_saturday">S</string>
+    <string name="material_calendar_sunday">D</string>
+    <array name="material_calendar_months_array">
+        <item>Gennaio</item>
+        <item>Febbraio</item>
+        <item>Marzo</item>
+        <item>Aprile</item>
+        <item>Maggio</item>
+        <item>Giugno</item>
+        <item>Luglio</item>
+        <item>Agosto</item>
+        <item>Settembre</item>
+        <item>Ottobre</item>
+        <item>Novembre</item>
+        <item>Dicembre</item>
+    </array>
+    <string name="material_calendar_today_button">Oggi</string>
+    <string name="material_calendar_positive_button">Ok</string>
+    <string name="material_calendar_negative_button">Cancella</string>
+    <string-array name="alarm">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+</resources>

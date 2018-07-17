@@ -1,0 +1,61 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
+    </style>
+
+    <style name="container">
+        <item name="android:layout_width">@dimen/container_dimension</item>
+        <item name="android:layout_height">@dimen/container_dimension</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="mapContainerTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_marginStart">30dp</item>
+    </style>
+
+
+    <style name="datepicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:datePickerMode">spinner</item>
+    </style>
+
+    <style name="lastButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="addButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/add_medicine_height</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">@color/trasparent</item>
+        <item name="android:scaleType">fitStart</item>
+    </style>
+
+    <style name="Vibration">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColorPrimaryDisableOnly">#37b539</item>
+        <item name="colorAccent">#e91e63</item>
+    </style>
+
+
+</resources>
