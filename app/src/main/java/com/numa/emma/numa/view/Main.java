@@ -71,6 +71,9 @@ public class Main extends AppCompatActivity {
         controller = (Controller) getApplicationContext();
         navigation = findViewById(R.id.navigation);
 
+        Intent intent = new Intent(this, Intro.class);
+        startActivity(intent);
+
         Fragment fragment;
         if (controller.load()) {
             fragment = new HomeProgram();
@@ -79,8 +82,6 @@ public class Main extends AppCompatActivity {
             controller = new Controller();
             fragment = new Profile();
             navigation.setSelectedItemId(R.id.profile);
-            Intent intent = new Intent(this, Intro.class);
-            startActivity(intent);
         }
         getSupportFragmentManager().beginTransaction().replace(R.id.main_container, fragment).commit();
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);

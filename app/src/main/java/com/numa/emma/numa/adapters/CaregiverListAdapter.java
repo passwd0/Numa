@@ -4,6 +4,8 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.RecyclerView;
+import android.text.SpannableString;
+import android.text.style.UnderlineSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,7 +37,9 @@ public class CaregiverListAdapter extends RecyclerView.Adapter<CaregiverListAdap
     @Override
     public void onBindViewHolder(final CaregiverListAdapter.ViewHolder holder, final int position) {
         String name = controller.getCaregiver().get(position).getName();
-        holder.textView.setText(name);
+        SpannableString content = new SpannableString(name);
+        content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
+        holder.textView.setText(content);
 
         holder.textView.setOnClickListener(new View.OnClickListener() {
             @Override
