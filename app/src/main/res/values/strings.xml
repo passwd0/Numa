@@ -83,6 +83,7 @@
     <string name="settings_numadispenser_notification_title">Notifica</string>
     <string name="settings_numadispenser_notification_details">Indica dopo quanto tempo, nel caso di mancata assunzione, vorresti ricevere una notifica.</string>
     <string name="settings_numadispenser_mapcontainer">Mappa contenitori</string>
+    <string name="settings_numadispenser_printer">Stampante</string>
 
     HOME
     <string name="home_title">Home</string>

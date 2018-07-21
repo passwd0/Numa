@@ -66,5 +66,21 @@
         <item name="android:layout_marginTop">8dp</item>
     </style>
 
+    <style name="introTextView">
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="introRadioButton">
+        <item name="android:colorAccent">@color/white</item>
+        <item name="android:buttonTint">@color/white</item>
+    </style>
 
 </resources>

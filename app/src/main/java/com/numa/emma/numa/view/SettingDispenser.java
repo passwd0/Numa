@@ -1,8 +1,12 @@
 package com.numa.emma.numa.view;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -23,7 +27,11 @@ import com.numa.emma.numa.utils.Utils;
 public class SettingDispenser extends Fragment {
     private Settings s;
 
-    public SettingDispenser(){}
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -121,5 +129,23 @@ public class SettingDispenser extends Fragment {
     public void onResume() {
         super.onResume();
         getActivity().setTitle("Numa Dispenser");
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        //menu.clear();
+        super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.printer, menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.printer:
+                //getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.main_container, new Setting()).addToBackStack(null).commit();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
