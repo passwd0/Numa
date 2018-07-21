@@ -44,9 +44,6 @@ public class Intro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.intro);
 
-        final View view = new View(getApplicationContext());
-        view.setBackgroundColor(Color.CYAN);
-
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -71,22 +68,18 @@ public class Intro extends AppCompatActivity {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
             //return PlaceholderFragment.newInstance(position + 1);
-            RadioButton r = findViewById(R.id.rb_1);
             Fragment fragment = new IntroPage1();
             switch (position){
                 case 0:
                     fragment = new IntroPage1();
                     break;
                 case 1:
-                    r = findViewById(R.id.rb_1);
                     fragment = new IntroPage2();
                     break;
                 case 2:
-                    r = findViewById(R.id.rb_2);
                     fragment = new IntroPage3();
                     break;
                 case 3:
-                    r = findViewById(R.id.rb_3);
                     fragment = new IntroPage4();
                     break;
             }

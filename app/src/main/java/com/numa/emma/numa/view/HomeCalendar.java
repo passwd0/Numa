@@ -48,11 +48,13 @@ public class HomeCalendar extends Fragment {
         List<EventDay> events = new ArrayList<>();
 
         //------------------------------TEST------------------
-        for (int i=0; i<20; i++){
+        for (int i=1; i<20; i++){
             Calendar calendar1 = Calendar.getInstance();
             calendar1.add(Calendar.DATE, -i);
             events.add(new EventDay(calendar1, R.drawable.verde0));
         }
+        //Calendar calendar1 = Calendar.getInstance();
+        //events.add(new EventDay(calendar1, R.drawable.rosso0));
         //-------------------------------------------------------
         calendarView.setEvents(events);
 

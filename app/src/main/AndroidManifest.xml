@@ -7,9 +7,9 @@
     <application
         android:name="com.numa.emma.numa.classes.Controller"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/icona"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/icona"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 

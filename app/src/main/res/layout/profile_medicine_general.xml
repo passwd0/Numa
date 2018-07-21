@@ -121,11 +121,12 @@
 
     <RadioGroup
         android:id="@+id/radioGroup_type"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -133,8 +134,9 @@
 
         <RadioButton
             android:id="@+id/type1"
-            android:layout_height="@dimen/image_big"
             style="@style/tipology"
+            android:layout_height="@dimen/image_big"
+            android:layout_marginStart="0dp"
             android:background="@drawable/type1"
             android:button="@null"
             android:checked="true"
@@ -146,8 +148,8 @@
 
         <RadioButton
             android:id="@+id/type2"
-            android:layout_height="@dimen/image_big"
             style="@style/tipology"
+            android:layout_height="@dimen/image_big"
             android:background="@drawable/type2"
             android:button="@null"
             android:scaleType="centerCrop"
@@ -158,8 +160,8 @@
 
         <RadioButton
             android:id="@+id/type3"
-            android:layout_height="@dimen/image_big"
             style="@style/tipology"
+            android:layout_height="@dimen/image_big"
             android:background="@drawable/type3"
             android:button="@null"
             android:scaleType="centerCrop"
@@ -170,8 +172,9 @@
 
         <RadioButton
             android:id="@+id/type4"
-            android:layout_height="@dimen/image_big"
             style="@style/tipology"
+            android:layout_height="@dimen/image_big"
+            android:layout_marginEnd="0dp"
             android:background="@drawable/type4"
             android:button="@null"
             android:scaleType="centerCrop"
@@ -184,8 +187,9 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_height="wrap_content"
         style="@style/tipology"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:text="@string/profile_addmedicine_type_1"
         android:textSize="@dimen/details_size"
         android:textStyle="italic"
@@ -217,8 +221,9 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_height="wrap_content"
         style="@style/tipology"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
         android:text="@string/profile_addmedicine_type_4"
         android:textSize="@dimen/details_size"
         android:textStyle="italic"
