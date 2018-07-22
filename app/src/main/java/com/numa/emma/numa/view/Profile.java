@@ -52,6 +52,15 @@ public class Profile extends Fragment {
         final RecyclerView caregiverList = view.findViewById(R.id.caregiver_list);
         ImageButton buttonMedicine = view.findViewById(R.id.medicinali_button);
 
+        editBirth.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean b) {
+                if (b){
+                    DialogFragment dialogfragment = new ProfileBirth();
+                    dialogfragment.show(getActivity().getSupportFragmentManager(), "datePickerDialog");
+                }
+            }
+        });
         editBirth.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
