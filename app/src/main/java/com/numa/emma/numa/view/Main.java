@@ -14,6 +14,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.widget.ScrollView;
 
 import com.numa.emma.numa.R;
 import com.numa.emma.numa.classes.Controller;
@@ -64,6 +65,7 @@ public class Main extends AppCompatActivity {
 
         controller = (Controller) getApplicationContext();
         navigation = findViewById(R.id.navigation);
+        final ScrollView scrollView = findViewById(R.id.scrollview);
 
         Intent intent = new Intent(this, Intro.class);
         startActivity(intent);
@@ -79,6 +81,7 @@ public class Main extends AppCompatActivity {
         }
         getSupportFragmentManager().beginTransaction().replace(R.id.main_container, fragment).commit();
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        scrollView.fullScroll(ScrollView.FOCUS_UP);
     }
 
     public static void verifyStoragePermissions(Activity activity) {
