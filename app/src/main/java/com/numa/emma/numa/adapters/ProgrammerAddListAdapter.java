@@ -12,26 +12,27 @@ import com.numa.emma.numa.R;
 import com.numa.emma.numa.classes.MedicinePillola;
 import com.numa.emma.numa.classes.Program;
 
-public class ProgrammerListMedicineListAdapter extends RecyclerView.Adapter<ProgrammerListMedicineListAdapter.ViewHolder> {
+public class ProgrammerAddListAdapter extends RecyclerView.Adapter<ProgrammerAddListAdapter.ViewHolder> {
     private Program program;
     private LayoutInflater mInflater;
 
     // data is passed into the constructor
-    public ProgrammerListMedicineListAdapter(Context context, Program program) {
+    public ProgrammerAddListAdapter(Context context, Program program) {
         this.mInflater = LayoutInflater.from(context);
         this.program = program;
     }
 
     // inflates the row layout from xml when needed
     @Override
-    public ProgrammerListMedicineListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ProgrammerAddListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = mInflater.inflate(R.layout.programmer_list_medicine_list_adapter, parent, false);
-        return new ProgrammerListMedicineListAdapter.ViewHolder(view);
+        return new ProgrammerAddListAdapter.ViewHolder(view);
     }
 
     // binds the data to the TextView in each row
     @Override
-    public void onBindViewHolder(final ProgrammerListMedicineListAdapter.ViewHolder holder, final int position) {
+    public void onBindViewHolder(final ProgrammerAddListAdapter.ViewHolder holder, final int position) {
+        holder.iv_dispenser.setVisibility(program.getMedicines().get(position).isPill()?View.VISIBLE:View.INVISIBLE);
         holder.medicine.setText(program.getMedicines().get(position).getName());
         holder.unit.setText(program.getQuantities().get(position).toString());
     }
@@ -43,11 +44,13 @@ public class ProgrammerListMedicineListAdapter extends RecyclerView.Adapter<Prog
 
     // stores and recycles views as they are scrolled off screen
     public class ViewHolder extends RecyclerView.ViewHolder {
+        ImageView iv_dispenser;
         TextView medicine;
         TextView unit;
 
         ViewHolder(View itemView) {
             super(itemView);
+            iv_dispenser = itemView.findViewById(R.id.image_dispenser);
             medicine = itemView.findViewById(R.id.tv_medicine_name);
             unit = itemView.findViewById(R.id.unit);
         }

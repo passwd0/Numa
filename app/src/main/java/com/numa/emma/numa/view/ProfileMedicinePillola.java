@@ -104,6 +104,8 @@ public class ProfileMedicinePillola extends Fragment{
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (toEdit)
+                    controller.delMedicine(medicine);
                 getActivity().getSupportFragmentManager().popBackStack(null, getActivity().getSupportFragmentManager().POP_BACK_STACK_INCLUSIVE);
                 getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.main_container, new Profile()).commit();
 

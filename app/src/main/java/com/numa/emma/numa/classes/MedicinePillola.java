@@ -66,6 +66,9 @@ public class MedicinePillola extends MedicineGeneral {
     }
 
     @Override
+    public boolean isPill(){return true;}
+
+    @Override
     public String toString() {
         return "MedicinePillola{" +
                 "form=" + form +

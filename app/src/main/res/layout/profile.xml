@@ -143,6 +143,7 @@ android:layout_height="wrap_content">
     <ImageButton
         android:id="@+id/medicinali_button"
         style="@style/addButton"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/medicinali_list"
         app:srcCompat="@drawable/a38" />
@@ -190,6 +191,7 @@ android:layout_height="wrap_content">
     <ImageButton
         android:id="@+id/caregiver_button"
         style="@style/addButton"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/caregiver_list"

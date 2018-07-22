@@ -9,5 +9,8 @@
     <dimen name="pill_dimension_height">75dp</dimen>
     <dimen name="pill_dimension_width">60dp</dimen>
     <dimen name="container_dimension">55dp</dimen>
+    <dimen name="intro_margin_top">30dp</dimen>
+    <dimen name="intro_iv_width">100dp</dimen>
+    <dimen name="intro_body_text_size">15sp</dimen>
 
 </resources>

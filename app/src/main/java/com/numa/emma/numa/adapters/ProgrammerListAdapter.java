@@ -24,7 +24,7 @@ public class ProgrammerListAdapter extends RecyclerView.Adapter<ProgrammerListAd
     private Controller controller;
     private LayoutInflater mInflater;
 
-    private ProgrammerListMedicineListAdapter programmerListMedicineListAdapter;
+    private ProgrammerAddListAdapter programmerAddListAdapter;
 
     public ProgrammerListAdapter(Context context, Controller controller) {
         this.controller = controller;
@@ -42,12 +42,8 @@ public class ProgrammerListAdapter extends RecyclerView.Adapter<ProgrammerListAd
         holder.hour.setText(controller.getProgram(position).getTimeString());
 
         holder.recyclerView.setLayoutManager(new LinearLayoutManager(mInflater.getContext()));
-        programmerListMedicineListAdapter = new ProgrammerListMedicineListAdapter(mInflater.getContext(), controller.getProgram(position));
-        holder.recyclerView.setAdapter(programmerListMedicineListAdapter);
-
-        for (MedicineGeneral m : controller.getProgram(position).getMedicines())
-            if (m.getType().equals(MedicineType.PILLOLA))
-                holder.dispenser.setVisibility(View.VISIBLE);
+        programmerAddListAdapter = new ProgrammerAddListAdapter(mInflater.getContext(), controller.getProgram(position));
+        holder.recyclerView.setAdapter(programmerAddListAdapter);
 
         holder.edit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,7 +69,6 @@ public class ProgrammerListAdapter extends RecyclerView.Adapter<ProgrammerListAd
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView hour;
-        ImageView dispenser;
         RecyclerView recyclerView;
         ImageButton edit;
         ImageButton delete;
@@ -81,7 +76,6 @@ public class ProgrammerListAdapter extends RecyclerView.Adapter<ProgrammerListAd
         ViewHolder(View itemView) {
             super(itemView);
             hour = itemView.findViewById(R.id.hour);
-            dispenser = itemView.findViewById(R.id.image_dispenser);
             recyclerView = itemView.findViewById(R.id.program_list);
             edit = itemView.findViewById(R.id.edit);
             delete = itemView.findViewById(R.id.delete);

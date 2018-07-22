@@ -51,6 +51,10 @@ public class MedicineGeneral implements Serializable{
         this.type = type;
     }
 
+    public boolean isPill(){
+        return false;
+    }
+
     @Override
     public String toString() {
         return "Medicine{" +

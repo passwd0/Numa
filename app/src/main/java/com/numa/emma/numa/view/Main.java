@@ -46,7 +46,6 @@ public class Main extends AppCompatActivity {
                     fragment = new HomeCalendar();
                     break;
                 case R.id.programma:
-                    setTitle("Programma");
                     fragment = new HomeProgram();
                     break;
                 case R.id.profile:
@@ -104,7 +103,7 @@ public class Main extends AppCompatActivity {
         if (getSupportFragmentManager().getBackStackEntryCount() == 0) {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setTitle(R.string.app_name);
-            builder.setIcon(R.mipmap.ic_launcher);
+            builder.setIcon(R.drawable.icona);
             builder.setMessage("Sicuro di voler uscire?")
                     .setCancelable(false)
                     .setPositiveButton("Si", new DialogInterface.OnClickListener() {

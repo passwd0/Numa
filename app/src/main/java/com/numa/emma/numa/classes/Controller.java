@@ -109,6 +109,8 @@ public class Controller extends Application implements Serializable {
         this.medicines.add(medicine);
     }
 
+    public void delMedicine(MedicineGeneral medicine){ this.medicines.remove(medicine); }
+
     public Program getProgram(int id) {return programs.get(id);}
 
     public List<Program> getPrograms() {

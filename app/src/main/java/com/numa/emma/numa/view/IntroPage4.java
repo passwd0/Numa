@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
@@ -20,8 +21,15 @@ public class IntroPage4 extends Fragment{
         Typeface typeface = Typeface.createFromAsset(getActivity().getAssets(), "fonts/Raleway-Medium.ttf");
 
         TextView tv_body = view.findViewById(R.id.tv_body);
-        tv_body.setTypeface(typeface);
+        ImageButton finish = view.findViewById(R.id.ib_finish);
 
+        tv_body.setTypeface(typeface);
+        finish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getActivity().finish();
+            }
+        });
         return view;
     }
 }
