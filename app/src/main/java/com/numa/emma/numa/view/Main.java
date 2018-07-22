@@ -12,13 +12,8 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 
 import com.numa.emma.numa.R;
 import com.numa.emma.numa.classes.Controller;
@@ -43,10 +38,10 @@ public class Main extends AppCompatActivity {
             Fragment fragment;
             switch (item.getItemId()) {
                 case R.id.calendar:
-                    fragment = new HomeCalendar();
+                    fragment = new Calendar();
                     break;
                 case R.id.programma:
-                    fragment = new HomeProgram();
+                    fragment = new Program();
                     break;
                 case R.id.profile:
                     fragment = new Profile();
@@ -75,7 +70,7 @@ public class Main extends AppCompatActivity {
 
         Fragment fragment;
         if (controller.load()) {
-            fragment = new HomeProgram();
+            fragment = new Program();
             navigation.setSelectedItemId(R.id.programma);
         } else {
             controller = new Controller();

@@ -57,11 +57,7 @@ public class MedicineGeneral implements Serializable{
 
     @Override
     public String toString() {
-        return "Medicine{" +
-                "name='" + name + '\'' +
-                ", take='" + take + '\'' +
-                ", type=" + type +
-                '}';
+        return getName();
     }
 
     @Override

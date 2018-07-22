@@ -16,8 +16,6 @@ import com.numa.emma.numa.classes.Controller;
 import com.numa.emma.numa.classes.MedicineGeneral;
 import com.numa.emma.numa.view.ProfileMedicineGeneral;
 
-import java.util.List;
-
 public class MedicineListAdapter extends RecyclerView.Adapter<MedicineListAdapter.ViewHolder> {
     private Controller controller;
     private LayoutInflater mInflater;
@@ -30,7 +28,7 @@ public class MedicineListAdapter extends RecyclerView.Adapter<MedicineListAdapte
 
     @Override
     public MedicineListAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = mInflater.inflate(R.layout.medicine_and_caregiver_list_adapter, parent, false);
+        View view = mInflater.inflate(R.layout.profile_list_adapter, parent, false);
         return new MedicineListAdapter.ViewHolder(view);
     }
 

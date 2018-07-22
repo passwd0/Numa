@@ -1,5 +1,6 @@
 package com.numa.emma.numa.classes;
 
+import com.numa.emma.numa.utils.MedicineUnit;
 import com.numa.emma.numa.utils.Utils;
 
 import java.io.Serializable;
@@ -65,7 +66,7 @@ public class Program implements Serializable {
         this.dates = dates;
     }
 
-    public List<MedicineGeneral> getMedicines() {
+    public List<? extends MedicineGeneral> getMedicines() {
         return medicines;
     }
 
@@ -99,6 +100,10 @@ public class Program implements Serializable {
 
     public List<Integer> getQuantities() {
         return quantities;
+    }
+
+    public int getQuantity(int i){
+        return quantities.get(i);
     }
 
     public void setQuantities(List<Integer> quantities) {
@@ -151,6 +156,14 @@ public class Program implements Serializable {
 
     public void setVibWearable(boolean vibWearable) {
         this.vibWearable = vibWearable;
+    }
+
+    public String getUnit(int i){
+        return MedicineUnit.values()[getMedicines().get(i).getType().ordinal()].toString();
+    }
+
+    public String toString(int i){
+        return getMedicines().get(i).getName()+", "+getQuantity(i)+" "+getUnit(i);
     }
 
     @Override
