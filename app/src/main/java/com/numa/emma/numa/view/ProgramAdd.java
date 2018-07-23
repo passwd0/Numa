@@ -33,6 +33,7 @@ import java.util.List;
 public class ProgramAdd extends Fragment {
     Controller controller;
     private Program program;
+    private EditText hourS;
     private boolean toEdit = false;
     public static ProgramAddName listAdapter;
 
@@ -43,7 +44,7 @@ public class ProgramAdd extends Fragment {
         controller = (Controller) getActivity().getApplicationContext();
 
         ImageButton button_add = view.findViewById(R.id.add_button);
-        final EditText hourS = view.findViewById(R.id.hour_edit);
+        hourS = view.findViewById(R.id.hour_edit);
         final RadioGroup radioGroup = view.findViewById(R.id.radioGroup_form);
         final RecyclerView recyclerView = view.findViewById(R.id.recyclerView);
         final RadioButton everyday = view.findViewById(R.id.everyday);
@@ -76,23 +77,15 @@ public class ProgramAdd extends Fragment {
         hourS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Calendar mcurrentTime = Calendar.getInstance();
-                int hour = mcurrentTime.get(Calendar.HOUR_OF_DAY);
-                int minute = mcurrentTime.get(Calendar.MINUTE);
-                TimePickerDialog mTimePicker;
-                mTimePicker = new TimePickerDialog(getContext(), new TimePickerDialog.OnTimeSetListener() {
-                    @Override
-                    public void onTimeSet(TimePicker timePicker, int selectedHour, int selectedMinute) {
-                        hourS.setText(selectedHour + ":" + selectedMinute);
-                        try {
-                            program.setTime(selectedHour, selectedMinute);
-                        }catch (Exception e){
-                            e.getStackTrace();
-                        }
-                    }
-                }, hour, minute, true);//Yes 24 hour time
-                mTimePicker.show();
+                timepicker();
+            }
+        });
 
+        hourS.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean b) {
+                if (b)
+                    timepicker();
             }
         });
 
@@ -146,6 +139,27 @@ public class ProgramAdd extends Fragment {
             }
         });
         return view;
+    }
+
+    private void timepicker(){
+        Calendar mcurrentTime = Calendar.getInstance();
+        int hour = mcurrentTime.get(Calendar.HOUR_OF_DAY);
+        int minute = mcurrentTime.get(Calendar.MINUTE);
+        TimePickerDialog mTimePicker;
+        mTimePicker = new TimePickerDialog(getContext(), new TimePickerDialog.OnTimeSetListener() {
+            @Override
+            public void onTimeSet(TimePicker timePicker, int selectedHour, int selectedMinute) {
+                hourS.setText(String.format("%02d:%02d", selectedHour, selectedMinute));
+
+
+                try {
+                    program.setTime(selectedHour, selectedMinute);
+                }catch (Exception e){
+                    e.getStackTrace();
+                }
+            }
+        }, hour, minute, true);//Yes 24 hour time
+        mTimePicker.show();
     }
 
     @Override

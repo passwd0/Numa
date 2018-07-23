@@ -95,14 +95,14 @@
     <string name="home_part2_calendar_bar">VAL AL CALENDARIO</string>
 
     <string name="home_program_title">Programma</string>
-    <string name="home_program_addprogram_title">Aggiungi programmazione</string>
+    <string name="home_program_addprogram_title">Frequenza</string>
     <string name="home_program_addprogram_details">Qui devi aggiungere tutti i medicinali che devono essere assunti ad uno stesso orario.</string>
     <string name="home_program_addprogram_time">Orario</string>
     <string name="home_program_addprogram_days_title">Programma</string>
     <string name="home_program_addprogram_days_everyday">Ogni giorno</string>
     <string name="home_program_addprogram_days_personalised">Personalizzato</string>
     <string name="home_program_addprogram_medicines_title">Medicinali</string>
-	 <string name="home_program_addprogram_medicines_details">Indica tutti i medicinali che devono essere assunti all\'orario impostato. Se sono pillole, queste verranno erogate dal dispenser e puoi associare\nl\'allarme del wearable. Se sono altri tipi di medicinali, invece, puoi settare solo il wearable.</string>
+	 <string name="home_program_addprogram_medicines_details">Indica tutti i medicinali che devono essere assunti all\'orario impostato. Ad essi puoi associare l'allarme del wearable e del dispenser.</string>
     <string name="home_program_addprogram_addmedicines_title">Aggiungi medicinali</string>
     <string name="home_program_addprogram_addmedicines_details">Aggiungi tutti i medicinali da assumere all\'orari indicato con le relative quantità.</string>
     <string name="home_program_addprogram_addmedicines_pill">Pillole</string>
