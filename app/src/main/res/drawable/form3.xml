@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by passwd <passwd@mes3hacklab.org> on 2018
+  ~ Copyright (c) 2018-2020. All rights reserved.
+  ~ Last modified 7/24/18 4:11 PM
+  -->
+
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@drawable/a12" android:state_checked="false"/>
     <item android:drawable="@drawable/dim3_switch0" android:state_checked="true"/>

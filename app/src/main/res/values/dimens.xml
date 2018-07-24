@@ -1,3 +1,9 @@
+<!--
+  ~ Created by passwd <passwd@mes3hacklab.org> on 2018
+  ~ Copyright (c) 2018-2020. All rights reserved.
+  ~ Last modified 7/24/18 4:11 PM
+  -->
+
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="block_size">26dp</dimen>
